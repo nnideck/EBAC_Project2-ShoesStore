@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+    background-color: #F5EBE0;
+}
+
+header {
+    color: #fff;
+    background-color: #D5BDAF;
+    padding: 10px 35px;
+}
+
+header .container-flex {
+    justify-content: end;
+}
+
+.container-flex {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+header ul li {
+    list-style: none;
+    padding: 3px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.about-us,
+.products {
+    width: 80vw;
+    margin: auto;
+}
+
+.article img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about-us {
+    margin: 25px auto;
+}
+
+h2 {
+    color: #a79388;
+    font-size: 24px;
+    margin: 20px auto;
+    border-bottom: 3px solid #D5BDAF;
+    padding-bottom: 10px ;
+}
+
+.products .article {
+    margin: 30px auto;
+}
+
+.products .article h3,
+.products .article p {
+    margin: 10px auto;
+}
+
+.products .article button {
+    width: 100%;
+    border: none;
+    height: 25px;
+    border-radius: 3px;
+    background-color: #9c9085 ;
+    cursor: pointer;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.products .article button:hover {
+    background-color: #504a44 ;
+}
+
+footer {
+    background-color: #D5BDAF;
+    padding-left: 20px;
+    color: #fff;
+    height: fit-content;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+.container-flex {
+        width: 80%;
+    }
+header ul li {
+    display: inline;
+    margin-left: 10px;
+}
+   .products-articles {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    column-gap: 4% ;
+   }
+
+   header {
+    color: #fff;
+    background-color: #D5BDAF;
+    padding: 10px 0px;
+}
+}
+
+@media screen and (min-width: 1024px){
+    
+    .products-articles {
+        display: grid;
+        grid-template-columns: repeat(4, 23%);
+        column-gap: 2.66%;
+       }
+    
+       .products-articles .article {
+        margin-top: 10px;
+       }
+
+       header h1 {
+        font-size: 26px;
+        text-wrap: nowrap;
+    }
+    
+    header ul li {
+        display: inline;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+
+    .about-us article {
+        display: flex;
+        width: 80vw;
+        justify-content: start;
+        align-items: start;
+    }
+    h2 {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    .about-us article p {
+        font-size: 14px;
+    }
+
+
+    .about-us .article img {
+        width: 40%;
+        margin-right: 20px;
+    }
+
+    .about-us .article,
+    .container-flex,
+    .products {
+        width: 60vw;
+        margin: auto;
+    }
+
+
+}
